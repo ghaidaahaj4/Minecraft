@@ -1,8 +1,41 @@
-#tile{
-    height: 10vh;
-    width: 10vw;
-    background-color: pink;
+body {
+    text-align: center;
+    font-family: Arial, sans-serif;
 }
-.sky{
-    background-color: blue;
+
+#inventory {
+    margin: 20px;
+    font-size: 20px;
+}
+
+#grid {
+    display: grid;
+    grid-template-columns: repeat(5, 50px);
+    grid-template-rows: repeat(5, 50px);
+    gap: 2px;
+    margin: 20px auto;
+}
+
+.tile {
+    height: 50px;
+    width: 50px;
+    border: 1px solid black;
+}
+
+.sky {
+    background-color: skyblue;
+}
+
+.dirt {
+    background-color: brown;
+}
+
+.stone {
+    background-color: gray;
+}
+
+button {
+    margin: 10px;
+    padding: 10px 20px;
+    cursor: pointer;
 }

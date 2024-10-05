@@ -3,15 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>mincraft</title>
+    <title>Simple Minecraft</title>
     <link rel="stylesheet" href="style.css" />
-    <link >
+    <script src="script.js" defer></script>
 </head>
 <body>
-    <h1>minecraft</h1>
-    <h3>sky tiles removed <span id="skyInventory"></span></h3>
-    <button>shovel</button>
-    <div id="tile" class="sky"></div>
-    
+    <h1>Simple Minecraft Game</h1>
+    <h3>Inventory</h3>
+    <div id="inventory">
+        <span id="skyInventory">Sky: 0</span>
+        <span id="dirtInventory">Dirt: 0</span>
+        <span id="stoneInventory">Stone: 0</span>
+    </div>
+
+    <h3>Select a Tool:</h3>
+    <button id="shovel">Shovel (Dirt)</button>
+    <button id="pickaxe">Pickaxe (Stone)</button>
+
+    <h3>Select from Inventory:</h3>
+    <button id="dirt">Place Dirt</button>
+    <button id="stone">Place Stone</button>
+
+    <div id="grid">
+        <!-- 5x5 grid will be dynamically created here -->
+    </div>
+
+
 </body>
 </html>
